@@ -3,7 +3,7 @@
 pipeline {
     agent any
     stages {
-        stage('Run Gradle Shared Lib') {
+        stage('Build & Test') {
             steps {
                 gradleBuild()
             }
