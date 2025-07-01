@@ -1,6 +1,8 @@
-/**
- * Build Gradle project.
- */
-def call() {   
-  sh './gradlew build'
+def call() {
+    stage('Build') {
+        sh './gradlew build'
+    }
+    stage('Test') {
+        sh './gradlew test'
+    }
 }
